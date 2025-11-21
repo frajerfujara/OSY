@@ -1,0 +1,22 @@
++-----------------+
+|     Hardware    |
++-----------------+
+        |
++-----------------+
+|     Kernel      |  <-- Jadro systému
+| (správa procesov|
+| správa pamäte,  |
+| I/O operácie)   |
++-----------------+
+        |
++-----------------+
+| System Calls    |  <-- Systémové volania, rozhranie medzi jadrom a aplikáciami
++-----------------+
+        |
++-----------------+
+|      Shell      |  <-- Príkazový riadok
++-----------------+
+        |
++-----------------+
+| User Space      |  <-- Používateľské aplikácie
++-----------------+
