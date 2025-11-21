@@ -1,22 +1,12 @@
-+-----------------+
-|     Hardware    |
-+-----------------+
-        |
-+-----------------+
-|     Kernel      |  <-- Jadro systému
-| (správa procesov|
-| správa pamäte,  |
-| I/O operácie)   |
-+-----------------+
-        |
-+-----------------+
-| System Calls    |  <-- Systémové volania, rozhranie medzi jadrom a aplikáciami
-+-----------------+
-        |
-+-----------------+
-|      Shell      |  <-- Príkazový riadok
-+-----------------+
-        |
-+-----------------+
-| User Space      |  <-- Používateľské aplikácie
-+-----------------+
+# UNIX System Architecture
+
+```mermaid
+graph TB
+    A[Hardware] --> B[Kernel]
+    B --> C[System Calls]
+    C --> D[Shell]
+    D --> E[User Space]
+    B --> F[Process Management]
+    B --> G[Memory Management]
+    B --> H[File System]
+    B --> I[IO Operations]
