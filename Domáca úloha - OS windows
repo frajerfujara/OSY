@@ -1,0 +1,21 @@
+| Vlastnosť           | Hodnota                         |
+|---------------------|----------------------------------|
+| Verzia Windows      | Windows 11 Pro                  |
+| Edícia (Home/Pro)   | Pro                              |
+| Typ účtu            | Lokálny účet                    |
+| Procesor            | Intel Core i7-10700K @ 3.80 GHz |
+
+
+## 2. Spustite príkazy a uložte výstup:
+
+| Príkaz       | Ako spustiť                               |
+|--------------|--------------------------------------------|
+| `winver`     | Win + R → `winver` → Enter                 |
+| `msinfo32`   | Win + R → `msinfo32` → Enter               |
+| `slmgr /xpr` | Príkazový riadok (spustiť ako správca)     |
+
+### Bonusová otázka:
+**Má váš PC TPM 2.0? (Ako ste to zistili?)**
+
+Áno, PC má **TPM 2.0**.  
+Zistil som to pomocou príkazu **`tpm.msc`**, kde je uvedená verzia špecifikácie TPM 2.0 a stav „TPM je pripravené na použitie“.
