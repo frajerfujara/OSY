@@ -1,0 +1,98 @@
+Zadanie (1/3)
+
+| Údaj              | Hodnota        |
+|-------------------|--------------- |
+| IP adresa         | 192.168.56.1   |
+| Maska podsiete    | 255.255.255.0  |
+| Predvolená brána  |  10.0.0.1      |
+
+Zadanie (2/3)
+
+| Údaj | Hodnota |
+|-----|---------|
+| DNS server | 8.8.8.8 |
+| DHCP povolené | ☑ Áno ☐ Nie |
+| MAC adresa (Fyzická adresa) | 3C:52:82:4F:91:A7 |
+
+
+Zadanie (3/3)
+
+### Krok 4: Otestujte konektivitu
+
+| Príkaz | Výsledok |
+|------|---------|
+| `ping 127.0.0.1` | ☑ Odpoveď ☐ Chyba |
+| `ping 8.8.8.8` | ☑ Odpoveď ☐ Chyba |
+| `ping google.com` | ☑ Odpoveď ☐ Chyba |
+
+### Krok 5: Spustite `tracert google.com`
+
+- Koľko "skokov" (hops) to trvalo? **3**
+- Aký bol prvý skok? **192.168.1.1** (router)
+
+### Krok 6: Spustite `nslookup google.com`
+
+- Akú IP adresu vrátil? **142.250.184.14**
+
+Bonusová úloha
+
+Spustite `nslookup` pre tieto domény a porovnajte IP adresy:
+
+| Doména | IP adresa |
+|-------|-----------|
+| `google.com` | 142.250.184.14 |
+| `facebook.com` | 157.240.22.35 |
+| `youtube.com` | 142.250.184.46 |
+
+### Otázka
+**Prečo majú rôzne weby rôzne IP adresy?**
+
+Rôzne webové stránky sú uložené na rôznych serveroch na internete.  
+Každý server má svoju vlastnú **unikátnu IP adresu**, aby ho bolo možné v sieti identifikovať a nájsť.
+
+Sieťové nastavenia
+
+**Čas:** 10 minút  
+
+⚠️ **POZOR:** Na VM je to bezpečné. Na fyzickom PC NEMEŇTE sieť!
+
+### Krok 1
+Otvorte `ncpa.cpl` (Win + R)
+
+### Krok 2
+Pravý klik na adaptér → **Vlastnosti** → **IPv4** → **Vlastnosti**
+
+### Krok 3: Zapíšte aktuálne nastavenia
+
+| Údaj | Aktuálna hodnota |
+|-----|------------------|
+| Typ | ☑ DHCP ☐ Statická |
+| IP adresa | 192.168.1.105 |
+| Maska | 255.255.255.0 |
+| Brána | 192.168.1.1 |
+| DNS | 8.8.8.8 |
+
+Regionálne nastavenia
+
+### Krok 4
+Nastavenia → **Čas a jazyk** → **Jazyk a oblasť**
+
+1. ☑ Pridaná anglická klávesnica  
+2. ☑ Prepnutie na anglickú klávesnicu (`Win + Space`)  
+3. ☑ Napísané v CMD: `ipconfig` – **funguje**  
+4. ☑ Prepnuté späť na slovenskú klávesnicu  
+
+---
+
+### Krok 5
+Nastavenia → **Čas a jazyk** → **Dátum a čas**
+
+1. Aké je vaše časové pásmo? **(UTC+01:00) Bratislava**  
+2. Zmeňte pásmo na **UTC+0 (Londýn)** – o koľko sa zmenil čas? **o 1 hodinu**  
+3. ☑ Vrátené späť na **Bratislava (UTC+01:00)**  
+
+---
+
+### Krok 6
+Overenie synchronizácie:
+
