@@ -171,7 +171,9 @@ Moderné vývojové prostredie s balíčkovacím systémom.
 ### Popis:
 
 Linux spustený online bez inštalácie.
+
 Stačí otvoriť prehliadač počkať chvíľu
+
 Pomalý ale za to jedoduchý postup
 ### Výhody:
 
