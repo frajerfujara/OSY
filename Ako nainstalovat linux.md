@@ -172,7 +172,7 @@ Moderné vývojové prostredie s balíčkovacím systémom.
 
 Linux spustený online bez inštalácie.
 
-Stačí otvoriť prehliadač počkať chvíľu
+Stačí otvoriť prehliadač a počkať chvíľu
 
 Pomalý ale za to jedoduchý postup
 ### Výhody:
@@ -185,6 +185,8 @@ Pomalý ale za to jedoduchý postup
 * Pomalé
 * Limitované
 
+### Príklad:
+JSLinux
 ---
 
 ## 🔹 11. OpenSSH (Windows terminál)
