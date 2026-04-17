@@ -35,6 +35,7 @@ Ubuntu
 
 - **Poradie:** 1
 - **Hodnota** (priemerná návštevnosť/deň): cca 2000+
+<img width="1437" height="761" alt="image" src="https://github.com/user-attachments/assets/25de6a03-97dd-4a32-b8ac-11c6cc9f3c9c" />
 
 ### 2.3 Distribúcia z inej rodiny ako Debian
 
